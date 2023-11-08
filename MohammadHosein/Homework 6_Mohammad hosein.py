@@ -1,8 +1,8 @@
+import random
+from typing import final
+
 while True:
     try:
-        import random
-
-        # Imports the random library
 
         print()
         quiz_level = int(input("Enter the level of quiz (1, 2, 3): "))
@@ -90,15 +90,7 @@ while True:
 
                 if quiz_pherase != quiz_answer:
                     print(f"The correct answer is: {quiz_answer}")
-                    final_score -= final_score
-        if quiz_level == 10:
-            quiz_level = 1
-
-        elif quiz_level == 100:
-            quiz_level = 2
-
-        elif quiz_level == 1000:
-            quiz_level = 3
+                    final_score -= 1
 
         print()
         print(f"Your final score in level #{quiz_level} is: {final_score} of 10")
